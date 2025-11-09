@@ -1,0 +1,158 @@
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 400px;
+  margin-left: 2rem;
+}
+
+ul {
+    list-style: none;
+  }
+
+li a {
+    text-decoration: none; 
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+  }
+
+.container {
+  border: 3px solid #000000;
+  padding: 0 30rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pyramid {
+    margin-top: 2rem;
+    color: black;
+}
+  
+  .p1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    color: black;
+  }
+  
+  .square {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #000000;
+    border-radius:15px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .square.outline-circle::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #000000;
+    border-radius: 50%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-top: 3px solid #000000;
+    margin-top: 2rem;
+  }
+
+.cluster-1 {
+top: 80px;
+left: 80px;
+width: 60px;
+height: 60px; 
+}
+
+.cluster-2 { 
+top: -80px;
+left: 80px;
+width: 60px;
+height: 60px; 
+}
+
+.cluster-3 {
+top: -10px;
+left: 80px;
+width: 60px;
+height: 60px; 
+  }
+
+.cluster-4 {
+width: 60px;
+height: 60px; 
+  }
+
+.cluster-5 {
+width: 60px;
+height: 60px; 
+  }
+
+.cluster-6 { 
+width: 60px;
+height: 60px; 
+}
+
+.cluster-7 { 
+width: 60px;
+height: 60px; 
+}
+
+.cluster-8 { 
+width: 60px;
+height: 60px; 
+}
+
+.cluster-9 { 
+width: 60px;
+height: 60px;
+ }
+
+.cluster-10 { 
+width: 60px;
+height: 60px; 
+}
+
+.shape-cluster {
+position: absolute;
+right: 90px;
+width: 200px;
+}
+
+.cluster-shape {
+  position: absolute;
+  background: #000000;
+  border-radius: 8px;
+}
