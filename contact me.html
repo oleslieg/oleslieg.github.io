@@ -3,72 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie's World - Contact Me</title>
     <link href="portfolio.css" rel="stylesheet">
-    <title>Leslie's World - Portfolio</title>
 </head>
 <body>
-    
     <div class="container">
-     
         <header class="nav-header">
             <div class="name">Leslie's World</div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about me.html">About me</a></li>
                     <li><a href="my work.html">My work</a></li>
-                    <li><a href="contact me.html">Contact me</a></li>
+                    <li><a href="contact me.html" class="active">Contact me</a></li>
                 </ul>
             </nav>
         </header>
 
-  
-        <main class="main-content">
-            <div class="left-content">
-                <div class="me">
-                    <h2>Leslie is a....</h2>
-                    <div class="roles">
-                        <div>Graphic Designer</div>
-                        <div>UX/UI designer</div>
-                        <div>Artist</div>
-                    </div>
-                </div>
-
+        <main class="main-content2">
+            <h1 class="contact-heading">Get in touch with me</h1>
             
-                <div class="pyramid">
-                    <div class="p1">
-                        <div class="pyramid-circle"></div>
-                    </div>
-                    <div class="p1">
-                        <div class="pyramid-square"></div>
-                        <div class="pyramid-square"></div>
-                    </div>
-                    <div class="p1">
-                        <div class="pyramid-square"></div>
-                        <div class="pyramid-circle"></div>
-                        <div class="pyramid-square"></div>
-                    </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Your name" required>
                 </div>
-            </div>
-
-            <div class="right-content">
-         
-                <div class="colorful-squares">
-                    <div class="color-square square-1"></div>
-                    <div class="color-square square-2"></div>
-                    <div class="color-square square-3"></div>
-                    <div class="color-square square-4"></div>
-                    <div class="color-square square-5"></div>
-                    <div class="color-square square-6"></div>
-                    <div class="color-square square-7"></div>
-                    <div class="color-square square-8"></div>
-                    <div class="color-square square-9"></div>
-                    <div class="color-square square-10"></div>
+                
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Your email" required>
                 </div>
-            </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Subject" required>
+                </div>
+                
+                <div class="textarea-group">
+                    <textarea class="form-textarea" placeholder="Message...." maxlength="200" required></textarea>
+                    <span class="word-limit">200 words max</span>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
         </main>
 
-   
+        <!-- Footer with Pink Border -->
         <footer class="footer">
             <div class="copyright">Copyrighted by Leslie Granados</div>
             <div class="social-icons">
