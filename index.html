@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="portfolio.css" rel="stylesheet">
+    <meta name="description" content="Brief portfolio website of Leslie Granados, showcasing graphic design, UX/UI design, and artistic skills.">
     <title>Leslie's World - Portfolio</title>
 </head>
 <body>
@@ -50,24 +51,21 @@
                     </div>
                 </div>
             </div>
-
-            <div class="right-content">
-         
-                <div class="colorful-squares">
-                    <div class="color-square square-1"></div>
-                    <div class="color-square square-2"></div>
-                    <div class="color-square square-3"></div>
-                    <div class="color-square square-4"></div>
-                    <div class="color-square square-5"></div>
-                    <div class="color-square square-6"></div>
-                    <div class="color-square square-7"></div>
-                    <div class="color-square square-8"></div>
-                    <div class="color-square square-9"></div>
-                    <div class="color-square square-10"></div>
-                </div>
-            </div>
         </main>
 
+      
+    <script>
+        document.querySelectorAll('.pyramid-square, .pyramid-circle').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f8bbd9';
+                this.style.transition = 'background-color 0.3s ease';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
    
         <footer class="footer">
             <div class="copyright">Copyrighted by Leslie Granados</div>

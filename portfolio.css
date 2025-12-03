@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: lexend, sans-serif;
+  font-family: lexend deca, Arial, Helvetica, sans-serif;
   background-color: #1a1a1a;
   color: #ffffff;
   min-height: 50vh;
@@ -171,7 +171,7 @@ body {
   width: 100%;
   padding: 15px;
   background-color: transparent;
-  border: 2px solid #EA5EB8;
+  border: 2px solid #e91e63;
   border-radius: 5px;
   color: #ffffff;
   font-size: 16px;
@@ -280,21 +280,43 @@ body {
   border-radius: 15px;
 }
 
-.square-1 { background-color: #F2C0E3; top: 0px; right: 100px;
-left: 120px; }
-.square-2 { background-color: #EA5EB8; top: 60px; right: 20px;
-left: 400px; }
-.square-3 { background-color: #6CD88D; top: 140px; right: 160px; 
-left: 180px;}
-.square-4 { background-color: #FCF98D; top: 140px; right: 40px; }
-.square-5 { background-color: #B4EDC3; top: 200px; right: 120px; }
-.square-6 { background-color: #B4EDC3; top: 200px; right: 200px;
-left: 500px; }
-.square-7 { background-color: #553AE8; top: 260px; right: 180px; }
-.square-8 { background-color: #F4778E; top: 260px; right: 100px; }
-.square-9 { background-color: #CF87FB; top: 260px; right: 20px; }
-.square-10 { background-color: #AC9FDD; top: 320px; right: 140px; }
 
+.work {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+
+.project-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-title {
+  color: #EA5EB8;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: #E8B5D9;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+}
 
 
 
@@ -372,5 +394,34 @@ a:hover {
       gap: 20px;
       padding: 20px;
       text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .work-content {
+    padding: 40px 20px;
+  }
+  
+  .project-title {
+    font-size: 24px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+  }
+  
+  .project-controls {
+    gap: 20px;
+  }
+  
+  .nav-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .select-button {
+    padding: 12px 30px;
+    font-size: 14px;
   }
 }
